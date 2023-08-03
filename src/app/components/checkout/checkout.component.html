@@ -1,0 +1,26 @@
+<div class="checkout">
+    <h2>Checkout</h2>
+    <div *ngIf="cartItems.length === 0" class="empty-cart">
+      <p>No hay productos en el carrito.</p>
+    </div>
+    <div *ngIf="cartItems.length > 0 && mostrarCarta==true"  class="cart-items">
+      <div *ngFor="let item of cartItems" class="cart-item">
+        <img [src]="item.product.imagen" alt="{{ item.product.nombre }}" />
+        <div class="item-details">
+          <h3>{{ item.product.nombre }}</h3>
+          <p>Precio: {{ item.product.precio | currency }}</p>
+          <p>Cantidad: {{ item.quantity }}</p>
+        </div>
+      </div>
+      <div class="cart-total">
+        <h4>Total del Carrito: {{ getTotalPrice() | currency }}</h4>
+        <button (click)="placeOrder()">Realizar Pedido</button>
+      </div>
+    </div>
+    <div *ngIf="orderPlaced" class="order-confirmation">
+      <h3>¡Pedido realizado con éxito!</h3>
+      <p>Gracias por tu compra. Tu pedido ha sido recibido y será procesado pronto.</p>
+      <button (click)="redirect()">Seguir Comprando</button>
+    </div>
+  </div>
+  

@@ -1,0 +1,37 @@
+<!-- Aquí se encuentra el código HTML del componente header -->
+<div class="header">
+    <div class="logo">
+      <!-- Logotipo de la tienda -->
+      <img src="../../../assets/Tienda-Online.jpg" alt="Logo de la tienda" >
+    </div>
+    <div class="main-nav">
+      <!-- Menú de navegación principal -->
+      <ul>
+        <li><a routerLink="/">Inicio</a></li>
+        <li><a routerLink="/productos">Productos</a></li>
+        <li><a routerLink="/ofertas">Ofertas</a></li>
+        <!-- Otros elementos del menú -->
+      </ul>
+    </div>
+    <div class="social-media-icons">
+        <a href="#" target="_blank" title="Facebook"><i class="pi pi-facebook"></i></a>
+        <a href="#" target="_blank" title="Twitter"><i class="pi pi-twitter"></i></a>
+        <a href="#" target="_blank" title="Instagram"><i class="pi pi-instagram"></i></a>
+        <!-- Puedes agregar más iconos de redes sociales según tus necesidades -->
+      </div>
+    <div class="card flex flex-wrap justify-content-center gap-3">
+        <span class="p-input-icon-right">
+          <input type="text" pInputText placeholder="Buscar productos..." />
+          <i class="pi pi-search" style="margin-left: 5px;"></i>
+        </span>
+      </div>
+      
+    <div class="user-actions">
+      <!-- Enlaces de inicio de sesión/registro y carrito de compras -->
+      <a *ngIf="!isLoggedIn" routerLink="/login">Iniciar sesión</a>
+      <a *ngIf="!isLoggedIn" routerLink="/registro">Registrarse</a>
+      <a *ngIf="isLoggedIn" routerLink="/mi-cuenta">Mi cuenta</a>
+      <a *ngIf="isLoggedIn" routerLink="/carrito">Carrito</a>
+    </div>
+  </div>
+  

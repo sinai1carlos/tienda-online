@@ -1,0 +1,18 @@
+.order-confirmation {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .order-confirmation h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .order-confirmation p {
+    font-size: 16px;
+  }
+  

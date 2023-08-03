@@ -1,0 +1,5 @@
+
+/* Agrega esta línea para importar los estilos de PrimeNG */
+@import 'primeng/resources/themes/saga-blue/theme.css';
+/* Agrega esta línea para importar los estilos de PrimeIcons */
+@import 'primeicons/primeicons.css';

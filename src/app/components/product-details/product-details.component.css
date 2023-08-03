@@ -1,0 +1,35 @@
+/* product-details.component.css (o el nombre de tu archivo CSS) */
+.product-details-container {
+  /* Estilos para el contenedor principal de los detalles del producto */
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  /* Estilos para la imagen del producto */
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-name {
+  /* Estilos para el nombre del producto */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  /* Estilos para el precio del producto */
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff; /* Color azul para el precio */
+  margin-bottom: 10px;
+}
+
+.product-description {
+  /* Estilos para la descripción del producto */
+  font-size: 16px;
+}

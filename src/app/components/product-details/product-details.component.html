@@ -1,0 +1,10 @@
+<!-- product-details.component.html -->
+<div class="product-details-container">
+    <img [src]="product.imagen" alt="{{ product.nombre }}" class="product-image" />
+    <h2 class="product-name">{{ product.nombre }}</h2>
+    <p class="product-price">Precio: {{ product.precio | currency }}</p>
+    <p class="product-description">{{ product.descripcion }}</p>
+  
+    <p-button styleClass="p-button-success" (click)="addToCart()">Agregar al carrito</p-button>
+  </div>
+  

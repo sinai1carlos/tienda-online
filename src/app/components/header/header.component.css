@@ -1,0 +1,64 @@
+/* Estilos base para el componente header */
+.header {
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el logo */
+.logo img {
+  width: 60px;
+  height: auto;
+}
+
+/* Estilos para la navegación principal */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0; /* Elimina el margen por defecto de la lista */
+  padding: 0; /* Elimina el padding por defecto de la lista */
+}
+
+.main-nav li {
+  margin-right: 20px;
+}
+
+.main-nav a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Estilos para las acciones del usuario */
+.user-actions a {
+  margin-right: 10px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 576px) {
+  .header {
+    flex-direction: column; /* Cambia la dirección del flexbox para apilar los elementos en columnas */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  .main-nav {
+    margin-top: 10px; /* Añade un margen superior a la navegación para separarla del logo */
+  }
+
+  .main-nav li {
+    margin-right: 0; /* Elimina el margen entre los elementos de la navegación */
+    margin-bottom: 10px; /* Añade un margen inferior para separar los enlaces en pantallas pequeñas */
+  }
+
+  .user-actions {
+    margin-top: 10px; /* Añade un margen superior a las acciones del usuario */
+  }
+}
+.social-media-icons a{
+  margin-right: 10px;
+}
